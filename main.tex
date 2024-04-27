@@ -1,0 +1,111 @@
+%% Imported Libraries
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+
+\usepackage{appendix} % Appendix Formatting
+\usepackage[margin=1.25in]{geometry} % Size of margin
+\usepackage{hyperref} % Hyperlinks
+%required for algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+% Double line spacing
+\usepackage{setspace}
+\doublespacing
+% Bracket package
+\usepackage{braket}
+% Font Selection
+% \usepackage[T1]{}
+% \usepackage{tgbonum}
+\usepackage{fontenc}
+
+% Theorum package
+\newtheorem{theorem}{Theorem}
+
+% Bold "Figure X"
+\usepackage[labelfont=bf]{caption}
+\captionsetup{labelfont=bf}
+
+% line numbers for the whole document
+% \usepackage{lineno}
+% \linenumbers
+
+% Colour text
+\usepackage[dvipsnames]{xcolor}
+
+
+
+
+\title{Dissertation 2}
+\author{Alif U Aziz}
+\date{November 2023}
+
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+       \vspace*{0.5cm}
+    \large
+       \textbf{Title}
+
+       \vspace{0.5cm}
+        Supervisors: \textbf{Prof. Firstname Surname}, \textbf{Dr. Firstname Surname} \& \textbf{Firstname Surname}            
+       \vspace{1.5cm}
+
+       \textbf{Firstname Middlename Surname} \\
+       Word Count: 10,000
+       \vfill
+            
+       A dissertation presented for the partial fulfilment of the degree of\\
+       Masters of Science in Neuroscience
+            
+       \vspace{0.8cm}
+     
+       \includegraphics[width=0.4\textwidth]{images/university-of-oxford-badge-logo.png}
+    
+        \vspace{1 cm}
+       University of Oxford \\ \& Wellcome Centre for Integretive Neuroscience\\
+       United Kingdom\\
+       2024
+            
+   \end{center}
+\end{titlepage}
+
+\include{sections/acknowledgements}
+
+\pagebreak
+\include{sections/abstract}
+
+
+\pagebreak
+\tableofcontents
+
+\pagebreak
+\include{sections/introduction}
+
+
+\pagebreak
+\include{sections/methods}
+
+
+\pagebreak
+\include{sections/results}
+
+
+\pagebreak
+
+
+\pagebreak
+\section*{Bibliography}
+% Insert Biblography
+\bibliography{references}
+% Referencing Style
+\bibliographystyle{apalike}
+
+
+
+\section*{Appendix}
+\include{sections/appendix}
+
+
+\end{document}
